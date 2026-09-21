@@ -1,6 +1,6 @@
 package com.example.cortex
 
-abstract class Shape {
-    abstract var x: Int
-    abstract var y: Int
-}
+abstract class Shape (
+    var x: Int,
+    var y: Int
+)
