@@ -1,6 +1,9 @@
 package com.example.cortex
 
-abstract class Shape (
+open class Shape (
     var x: Int,
     var y: Int
 )
+
+class Rhombus(x: Int, y: Int): Shape(x,y) {
+}
