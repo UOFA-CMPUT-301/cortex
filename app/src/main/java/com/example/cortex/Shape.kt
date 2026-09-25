@@ -6,7 +6,7 @@ import androidx.compose.remote.creation.compose.state.pow
 abstract class Shape (
     var x: Int,
     var y: Int,
-    val color: String = "Red"
+    val color: String = "Matt Green"
 )
 
 
