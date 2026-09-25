@@ -12,7 +12,7 @@ abstract class Shape (
 
 class Rhombus(x: Int, y: Int): Shape(x,y) {}
 
-class Hexagon(posx: Int, posy: Int, sideLen: Double): Shape(posx,posy,"blue") {
+class Hexagon(posx: Int, posy: Int, sideLen: Double): Shape(posx,posy) {
     fun area(): Double {
         return 3*(3.pow(1/2))/2 * sideLen.pow(2)
     }
