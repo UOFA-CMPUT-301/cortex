@@ -1,12 +1,16 @@
 package com.example.cortex
 
+
 import androidx.compose.remote.creation.compose.state.pow
 
 abstract class Shape (
     var x: Int,
     var y: Int,
-    val color: String
+    val color: String = "Red"
 )
+
+
+class Rhombus(x: Int, y: Int): Shape(x,y) {}
 
 class Hexagon(posx: Int, posy: Int, sideLen: Double): Shape(posx,posy,"blue") {
     fun area(): Double {
@@ -16,4 +20,5 @@ class Hexagon(posx: Int, posy: Int, sideLen: Double): Shape(posx,posy,"blue") {
     fun perimeter(): Double {
         return 6*sideLen
     }
+
 }
